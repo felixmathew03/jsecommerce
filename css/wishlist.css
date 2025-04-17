@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height:10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(209, 248, 248);
+}
+.navbar h1{
+    font-family: fantasy;
+    color: rgb(6, 3, 69);
+    font-weight: 100;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+.navbar a:hover{
+    color: rgb(7, 7, 133);
+    text-decoration: underline;
+}
+.wislist{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pimage img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.wbutton button{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(3, 3, 125);
+    color: white;
+    border-radius: 4px;
+}

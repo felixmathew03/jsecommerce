@@ -37,6 +37,15 @@ body{
     background:none;
     outline: none;
 }
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+.navbar a:hover{
+    color: rgb(7, 7, 133);
+    text-decoration: underline;
+}
 .products{
     width: 85%;
     margin: auto;
@@ -62,7 +71,9 @@ body{
     font-family: cursive;
     font-size: 14px;
     text-decoration: none;
+    position: relative;
 }
+
 .card:hover{
     transform: scale(1.05);
 }
@@ -75,4 +86,23 @@ body{
 }
 .card h2{
     color: green;
+}
+.wish{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+.wish img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.viewB button{
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid rgb(1, 1, 87);
+    border-radius: 35px;
+    color: rgb(1, 1, 87);
+    cursor: pointer;
 }

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./product.css">
 </head>
 <body>
     <div class="navbar">
         <h1 class="logo">
-            VENDORA
+            <a href="./index.html">VENDORA</a>
         </h1>
+        <a href="./cart.html">Cart</a>
+        <a href="./wishlist.html">Wishlist</a>
     </div>
     <div class="product">
         <div class="imageSection">
@@ -23,14 +24,63 @@
     
                 </div>
             </div>
-            <div class="title">
-                <h1 id="title"></h1>
+            <div class="buttons">
+                <button class="cart" onclick="addToCart()">
+                    Add to cart
+                </button>
+                <button class="buy">
+                    Buy Now
+                </button>
             </div>
         </div>
         <div class="productDetails">
             <div class="details">
-                <div class="category">
-                    <h3>Category: <strong id="category"></strong></h3>
+                <h3 id="category" class="category"></h3>
+                <h1 id="title" class="title"></h1>
+                <h4 id="brand" class="brand"></h4>
+                <div class="ratings ">
+                    <div class="rating" >
+                        <p id="rating">4.4</p>
+                        <img src="./images/icons8-star-24.png" alt="">
+                    </div>
+                    <div class="reviews" >
+                        <p class="reviews" id="reviews"></p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <h1 class="discounted-price" id="discountedPrice"></h1>
+                    <h3 class="original-price" id="price"></h3>
+                    <p class="discount" id="discount"></p>
+                </div>
+                <div class="tags" id="tags">
+                   
+                </div>
+                <div class="description">
+                    <h4>Description </h4>
+                    <p id="description"></p>
+                </div>
+                <div class="pdetails">
+                    <table>
+                        <tr>
+                            <td colspan="3" >Specifications</td>
+                        </tr>
+                        <tr >
+                            <td>Waranty Information</th>
+                            <td id="waranty"></td>
+                        </tr>
+                        <tr>
+                            <td>Return Policy</th>
+                            <td id="returnp"></td>
+                        </tr>
+                        <tr>
+                            <td>Availibility</th>
+                            <td id="avail"></td>
+                        </tr>
+                        <tr>
+                            <td>Stock</th>
+                            <td id="stock"></td>
+                        </tr>
+                      </table>
                 </div>
             </div>
         </div>

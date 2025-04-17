@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1 class="logo">
+            <a href="./index.html">VENDORA</a>
+        </h1>
+        <a href="./cart.html">Cart</a>
+    </div>
+
+    <!-- Cart details -->
+     <div class="carrt">
+        <div id="carts">
+            
+        </div>
+        <div class="detail">
+            <div class="details">
+                <h2 align="center" style="margin: 15px;">Total</h2>
+                <table border="1px" cell>
+                    <tr>
+                        <thead>
+                            <th>Title</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody id="table">
+                        </tbody>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="cp">
+                <div class="cont">
+                    <p>Delivery Charge: $5</p>
+                    <p id="tm"></p>
+                </div>
+                <div class="payment">
+                    <button onclick="clearA()">Buy Now</button>
+                </div>
+            </div>
+            
+        </div>
+        
+     </div>
+    
+    <!--  -->
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>
