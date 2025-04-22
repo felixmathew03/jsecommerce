@@ -2,6 +2,8 @@ function fetchWishlist() {
     for(i=0;i<sessionStorage.length;i++){
         const key=sessionStorage.key(i);
         const value=JSON.parse(sessionStorage.getItem(key));
+        if (!value.title) 
+            continue;
         document.getElementById('wishlists').innerHTML+=`
             <div class="item">
                 <div class="pimage">
@@ -15,7 +17,7 @@ function fetchWishlist() {
                     <button onclick="removeFromWishlist(${value.id})">Remove</button>
                 </div>
             </div>
-        `
+        `;
     }
 }
 fetchWishlist();
